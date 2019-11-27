@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Order Checkout App</title>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Checkout</h1>
+      <div id="main-container">
+
+        <div class="form-container">
+          <form id="add-item" class="form">
+            <div class='form-element'>
+              <div>Item name:</div>
+              <input type="text" id="new-item-name" placeholder="" name>
+            </div>
+
+            <div class='form-element'>
+              <div>Price:</div>
+              <input type="text" id="new-item-price" placeholder="">
+            </div>
+            <div class='form-element'>
+              <button class='btn-primary'>Add</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="order-items">
+
+          <h3>Checkout</h3>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- <tr class="item" data-id='1'>
+                <td class='name-col'>widget</td>
+                <td class='price-col'>9.99</td>
+                <td class='qty-col'>2</td>
+                <td class='actions'>
+                  <button class='increment btn btn-secondary'>+</button>
+                  <button class='decrement btn btn-secondary'>-</button>
+                  <button class='remove btn btn-danger'>remove</button>
+                </td>
+              </tr>
+
+              <tr class="item" data-id='2'>
+                <td class='name-col'>thing</td>
+                <td class='price-col'>19.99</td>
+                <td class='qty-col'>1</td>
+                <td class='actions'>
+                  <button class='increment btn btn-secondary'>+</button>
+                  <button class='decrement btn btn-secondary'>-</button>
+                  <button class='remove btn btn-danger'>remove</button>
+                </td>
+              </tr>
+
+              <tr class="item" data-id='3'>
+                <td class='name-col'>gadget</td>
+                <td class='price-col'>5.99</td>
+                <td class='qty-col'>3</td>
+
+                <td class='actions'>
+                  <button class='increment btn btn-secondary'>+</button>
+                  <button class='decrement btn btn-secondary'>-</button>
+                  <button class='remove btn btn-danger'>remove</button>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+
+          <div class='summary'>
+            <div id="subtotal">
+              <span class='summary-label'>Subtotal:</span>
+              <span class='summary-value'>57.94</span>
+            </div>
+            <div id="tax">
+              <span class='summary-label'>Tax:</span>
+              <span class='summary-value'>5.41</span>
+            </div>
+            <div id="total">
+              <span class='summary-label'>Total:</span>
+              <span class='summary-value'>63.08</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <!-- Add firebase libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <!-- firebase libraries -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
