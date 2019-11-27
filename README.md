@@ -26,7 +26,8 @@ It should have the following methods...
     {
       id: 1,
       name: 'something cool',
-      price: '9.99'
+      price: '9.99',
+      quantity: 1
     }
     ```
 
